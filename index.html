@@ -34,8 +34,9 @@
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
+       
   <script>
-    var serviceWorkerVersion = '3844607483';
+    var serviceWorkerVersion = '3829975104';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -97,6 +98,22 @@
       // Service workers not supported. Just drop the <script> tag.
       loadMainDartJs();
     }
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyD3CIE8xL7lrw9P4MaH37OdlgDdOJGp9tg",
+      databaseURL: "https://kernell-web-default-rtdb.firebaseio.com",
+      authDomain: "kernell-web.firebaseapp.com",
+      projectId: "kernell-web",
+      storageBucket: "kernell-web.appspot.com",
+      messagingSenderId: "476552728205",
+      appId: "1:476552728205:android:1b848e1aef091580375cc4",
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
   </script>
 </body>
 </html>
